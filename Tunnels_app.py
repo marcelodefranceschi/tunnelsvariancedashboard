@@ -136,14 +136,11 @@ with st.container(border=True):
             st.dataframe(df_in_month, height=460)
         with b2:
             st.markdown('##### In-month Variance Comments')
-            st.markdown("1. OCS (£178k) - Reprofile of Network Rail £3k \n\n and IVL costs (£181k) reprofiled to JUN24.")
-            st.markdown("2. Stage 1 Scope (£111k) - In-month underspend.")
-            st.markdown("3. Inflation £27k - Inflation rate calculation adjusted to 10.52% plus 2% a year and consequential changes from Stage 1 Scope.")
+            st.markdown("1. OCS (£178k) - Reprofile of Network Rail £3k and IVL PFA Removal (£181k) to re-commence in June 2024.")
+            st.markdown("2. Stage 1 Scope (£111k) - Forecast based on cost and In-month actualised against applied amount.")
+            st.markdown("3. Inflation £27k - Inflation rate calculation adjusted from 8.09%  to 10.52% plus 2% a year and consequential changes from Stage 1 Scope.")
             st.markdown("4. Stage 2 Unlet Works (£30k) - UKPN non-contestable works £30k reprofiled from MAY to SEP24.")
             st.markdown("5. NR VAT (£54k) - Consequential changes from above items.")
-
-
-
 
 
 
@@ -204,10 +201,10 @@ with st.container(border=True):
             st.dataframe(df_YTD, height=460)
         with e2:
             st.markdown('##### YTD Variance Comments')
-            st.markdown('1. OCS (£175k) - Reprofile of Network Rail £6k and IVL costs (£181k) reprofiled to JUN24.')
-            st.markdown('2. Stage 1 Scope (£41k) - In-month underspend (£111k) offset by overspend in APR24 £70k.')
-            st.markdown('3. Inflation £76k - Inflation rate calculation adjusted to 10.52% plus 2% a year and consequential changes from Stage 1 Scope.')
-            st.markdown('4. Stage 2 Unlet Works (£30k) - UKPN non-contestable works £30k reprofiled from MAY to SEP24.')
+            st.markdown('1. OCS (£175k) - Reprofile of Network Rail £6k and IVL PFA Removal (£181k) to re-commence in June 2024.')
+            st.markdown('2. Stage 1 Scope (£41k) - Forecast based on cost and In-month actualised against applied amount (£111k) offset by overspend in APR24 £70k.')
+            st.markdown('3. Inflation £76k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year and consequential changes from Stage 1 Scope.')
+            st.markdown('4. Stage 2 Unlet Works (£30k) - UKPN non-contestable works £30k reprofiled from May to September 2024.')
             st.markdown('5. NR VAT (£31k) - Consequential changes from above items.')
 
 
@@ -237,8 +234,8 @@ with st.container(border=True):
         with g2:
             st.markdown('##### FY 24_25 Variance Comments')
             st.markdown('1. OCS £24k - Reprofile of Network Rail costs')
-            st.markdown('2. Stage 1 Scope £1,200k - BMJV Phase 1 de-risking transfer of costs from FY 25_26')
-            st.markdown('3. Inflation £770k - Inflation rate calculation adjusted to 10.52% plus 2% a year and consequential changes from Stage 1 Scope')
+            st.markdown('2. Stage 1 Scope £1,200k - BMJV Phase 1 de-risking transfer of costs from FY25/26')
+            st.markdown('3. Inflation £770k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year and consequential changes from Stage 1 Scope')
             st.markdown('4. NR VAT £367k - Consequential changes from above items')
 
 
@@ -270,14 +267,14 @@ with st.container(border=True):
         with i2:
             #st.markdown('### FY 2025_26 Table')
             st.markdown('##### FY 25_26 Variance Comments')
-            st.markdown('1. Stage 1 Scope (£5,886) - BMJV Phase 1 de-risking transfer of costs to FY 24_25 and FY 26_27')
-            st.markdown('2. Stage 2 Unlet Works £5,160k -  Early Works-Utilities & Programme de-risking £5,160k')
-            st.markdown('3. Inflation £736k - Inflation rate calculation adjusted to 10.52% plus 2% a year')
+            st.markdown('1. Stage 1 Scope (£5,886) - BMJV Phase 1 de-risking transfer of costs to FY24/25 and FY26/27')
+            st.markdown('2. Stage 2 Unlet Works £5,160k - Early Works-Utilities & Programme de-risking £5,160k')
+            st.markdown('3. Inflation £736k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year')
             st.markdown('4. NR VAT £2k - Consequential changes from above items')
 
 
 #st.page_link("https://lowerthamescrossing.sharepoint.com/:x:/s/Prism/ERTBK6KjBdNIr4BN87Ny8AYBFWv9f64o9h2zRGjWBosGkg?e=y7vqFc", label="Tunnels Pillar Table", icon="🌎")
-st.link_button("Go to Tunnels Pillar Sheet :sunglasses:", "https://lowerthamescrossing.sharepoint.com/:x:/s/Prism/ERTBK6KjBdNIr4BN87Ny8AYBFWv9f64o9h2zRGjWBosGkg?e=yIue0Y", type="primary")
+st.link_button("Go to Tunnels Pillar Sheet :sunglasses:", "https://lowerthamescrossing.sharepoint.com/:x:/s/HECommercialReporting/Ed4JH7-26lVFlKYWE7I3wLQBAOQ3qL55-aOTxonYyMQTKA?e=xKahZj", type="primary")
 
 # Execute the external Python script TDR.py
 def run_external_script():
