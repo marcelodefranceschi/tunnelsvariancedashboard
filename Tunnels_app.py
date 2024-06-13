@@ -76,7 +76,7 @@ st.set_page_config(page_title="T&A Variances Dashboard",
 
 st.title(':green-background[T&A Cost Forecast Variances Dashboard]')
 st.markdown('#### LTC Tunnels and Approaches variances against the ABP')
-st.markdown('''##### Reporting Period: :red[QBR/JUN24]''')
+st.markdown('''##### Reporting Period: :red[MAY24]''')
 
 # Sidebar filters
 # df_EAC= df_totals.groupby('Account').sum()
