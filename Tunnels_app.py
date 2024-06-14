@@ -28,8 +28,8 @@ df_in_month_totals = pd.read_excel(file_address, engine="openpyxl", sheet_name="
 df_YTD = pd.read_excel(file_address, engine="openpyxl", sheet_name="YTD")
 df_YTD_totals = pd.read_excel(file_address, engine="openpyxl", sheet_name="YTD_TOTALS")
 
-df_in_month_value = df_totals.at[84, 'May-24']
-df_in_month_ABP = df_ABP.at[84, 'May-24']
+df_in_month_value = df_totals.at[84, 'Jun-24']
+df_in_month_ABP = df_ABP.at[84, 'Jun-24']
 df_in_month_value_result = df_in_month_value / 1000
 df_in_month_ABP_result = df_in_month_ABP / 1000
 formatted_df_in_month_value = f"£{df_in_month_value_result:,.0f}k"
@@ -76,7 +76,7 @@ st.set_page_config(page_title="T&A Variances Dashboard",
 
 st.title(':green-background[T&A Cost Forecast Variances Dashboard]')
 st.markdown('#### LTC Tunnels and Approaches variances against the ABP')
-st.markdown('''##### Reporting Period: :red[MAY24]''')
+st.markdown('''##### Month-end Reporting: :red[MAY24]''')
 
 # Sidebar filters
 # df_EAC= df_totals.groupby('Account').sum()
@@ -118,7 +118,7 @@ with st.container(border=True):
         fig_in_month_totals = px.histogram(
             df_in_month_totals,
             x="Account",
-            y=["May-24 In-month", "May-24 ABP", "Variance"],
+            y=["Jun-24 In-month", "Jun-24 ABP", "Variance"],
             title="Totals",
             barmode="group", text_auto='.2s')
         st.plotly_chart(fig_in_month_totals, use_container_width=True, theme="streamlit")
@@ -126,7 +126,7 @@ with st.container(border=True):
         fig_in_month = px.histogram(
             df_in_month,
             x="Account",
-            y=["May-24 In-month", "May-24 ABP", "Variance"],
+            y=["Jun-24 In-month", "Jun-24 ABP", "Variance"],
             title="Control Account",
             barmode="group", text_auto='.2s')
         st.plotly_chart(fig_in_month, use_container_width=True, theme="streamlit")
@@ -151,7 +151,7 @@ with st.container(border=True):
 #         fig_in_month_totals = px.histogram(
 #             df_in_month_totals,
 #             x="Account",
-#             y=["May-24 In-month", "May-24 ABP", "Variance"],
+#             y=["Jun-24 In-month", "Jun-24 ABP", "Variance"],
 #             title="Totals",
 #             barmode="group", text_auto='.2s')
 #         st.plotly_chart(fig_in_month_totals, use_container_width=True, theme="streamlit")
@@ -167,7 +167,7 @@ with st.container(border=True):
 #         fig_in_month = px.histogram(
 #             df_in_month,
 #             x="Account",
-#             y=["May-24 In-month", "May-24 ABP", "Variance"],
+#             y=["Jun-24 In-month", "Jun-24 ABP", "Variance"],
 #             title="Control Account",
 #             barmode="group", text_auto='.2s')
 #         st.plotly_chart(fig_in_month, use_container_width=True, theme="streamlit")
