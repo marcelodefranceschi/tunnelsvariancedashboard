@@ -195,7 +195,7 @@ with st.container(border=True):
         barmode="group", text_auto='.2s')    
         st.plotly_chart(fig_YTD, use_container_width=True)            
     with tab_c3:
-        e1, e2 = st.columns([0.6, 0.4])
+        e1, e2 = st.columns([0.5, 0.5])
         with e1:
             st.dataframe(df_YTD, height=460)
         with e2:
@@ -228,7 +228,7 @@ with st.container(border=True):
                 barmode="group", text_auto='.2s')
         st.plotly_chart(fig_24_25, use_container_width=True)
     with tab_f3:
-        g1, g2 = st.columns([0.6, 0.4])
+        g1, g2 = st.columns([0.5, 0.5])
         with g1:
             st.dataframe(df_24_25, height=460)
         with g2:
@@ -262,7 +262,7 @@ with st.container(border=True):
             barmode="group", text_auto='.2s')
         st.plotly_chart(fig_25_26, use_container_width=True)
     with tab_h3:
-        i1, i2 = st.columns([0.6, 0.4])
+        i1, i2 = st.columns([0.5, 0.5])
         with i1:
             st.dataframe(df_25_26, height=460)
         with i2:
