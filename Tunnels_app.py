@@ -102,10 +102,10 @@ with st.container(border=True):
         #                 delta_color="off")
     with a3:
         tile = a3.container(height=120)
-        tile.metric(label="**FY 2024_25**", value=formatted_df_24_25_value, delta=formatted_df_24_25_delta)
+        tile.metric(label="**FY 24/25**", value=formatted_df_24_25_value, delta=formatted_df_24_25_delta)
     with a4:
         tile = a4.container(height=120)
-        tile.metric(label="**FY 2025_26**",
+        tile.metric(label="**FY 25/26**",
                         value=formatted_df_25_26_value,
                         delta=formatted_df_25_26_delta)
 
@@ -136,12 +136,11 @@ with st.container(border=True):
             st.dataframe(df_in_month, height=460)
         with b2:
             st.markdown('##### In-month Variance Comments')
-            st.markdown("1. OCS (£178k) - Reprofile of Network Rail £3k and IVL PFA Removal (£181k) to re-commence in June 2024.")
-            st.markdown("2. Stage 1 Scope (£111k) - Forecast based on cost and In-month actualised against applied amount.")
-            st.markdown("3. Inflation £27k - Inflation rate calculation adjusted from 8.09%  to 10.52% plus 2% a year and consequential changes from Stage 1 Scope.")
-            st.markdown("4. Stage 2 Unlet Works (£30k) - UKPN non-contestable works £30k reprofiled from MAY to SEP24.")
-            st.markdown("5. NR VAT (£54k) - Consequential changes from above items.")
-
+            st.markdown("**Overall In-month variance £533k:**")
+            st.markdown("1. OCS (£72k) - IVL PFA Removal to re-commence in July 2024.")
+            st.markdown("2. Stage 1 Scope £427k - Forecast based on cost and In-month actualised to forecasted by DP supplier.")
+            st.markdown("3. Inflation £95k - Inflation rate calculation adjusted from 8.09%  to 10.52% plus 2% a year and consequential changes from Stage 1 Scope.")
+            st.markdown("5. NR VAT £82k - Consequential changes from above items.")
 
 
 # with st.container(border=True):
@@ -201,11 +200,12 @@ with st.container(border=True):
             st.dataframe(df_YTD, height=460)
         with e2:
             st.markdown('##### YTD Variance Comments')
-            st.markdown('1. OCS (£175k) - Reprofile of Network Rail £6k and IVL PFA Removal (£181k) to re-commence in June 2024.')
-            st.markdown('2. Stage 1 Scope (£41k) - Forecast based on cost and In-month actualised against applied amount (£111k) offset by overspend in APR24 £70k.')
-            st.markdown('3. Inflation £76k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year and consequential changes from Stage 1 Scope.')
+            st.markdown("**Overall YTD variance £331k:**")
+            st.markdown('1. OCS (£247k) - Reprofile of Network Rail £9k and IVL PFA Removal (£256k) to re-commence in July 2024.')
+            st.markdown('2. Stage 1 Scope £385k - Forecast based on cost and In-month actualised to forecasted by DP supplier £427k offset by May24 YTD (£42k).')
+            st.markdown('3. Inflation £172k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year and consequential changes from Stage 1 Scope.')
             st.markdown('4. Stage 2 Unlet Works (£30k) - UKPN non-contestable works £30k reprofiled from May to September 2024.')
-            st.markdown('5. NR VAT (£31k) - Consequential changes from above items.')
+            st.markdown('5. NR VAT £51k - Consequential changes from above items.')
 
 
 with st.container(border=True):
@@ -232,7 +232,8 @@ with st.container(border=True):
         with g1:
             st.dataframe(df_24_25, height=460)
         with g2:
-            st.markdown('##### FY 24_25 Variance Comments')
+            st.markdown('##### FY 24/25 Variance Comments')
+            st.markdown("**Overall FY 24/25 variance £2,361k:**")
             st.markdown('1. OCS £24k - Reprofile of Network Rail costs')
             st.markdown('2. Stage 1 Scope £1,200k - BMJV Phase 1 de-risking transfer of costs from FY25/26')
             st.markdown('3. Inflation £770k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year and consequential changes from Stage 1 Scope')
@@ -266,11 +267,13 @@ with st.container(border=True):
             st.dataframe(df_25_26, height=460)
         with i2:
             #st.markdown('### FY 2025_26 Table')
-            st.markdown('##### FY 25_26 Variance Comments')
+            st.markdown('##### FY 25/26 Variance Comments')
+            st.markdown("**Overall FY 26/26 variance £27,834k:**")
             st.markdown('1. Stage 1 Scope (£5,886) - BMJV Phase 1 de-risking transfer of costs to FY24/25 and FY26/27')
             st.markdown('2. Stage 2 Unlet Works £5,160k - Early Works-Utilities & Programme de-risking £5,160k')
-            st.markdown('3. Inflation £736k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year')
-            st.markdown('4. NR VAT £2k - Consequential changes from above items')
+            st.markdown('3. Project Risk increased by £21,200k to account Scenario 1 Scope')
+            st.markdown('4. Inflation £3,036k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year')
+            st.markdown('5. NR VAT £4,326k - Consequential changes from above items')
 
 
 #st.page_link("https://lowerthamescrossing.sharepoint.com/:x:/s/Prism/ERTBK6KjBdNIr4BN87Ny8AYBFWv9f64o9h2zRGjWBosGkg?e=y7vqFc", label="Tunnels Pillar Table", icon="🌎")
