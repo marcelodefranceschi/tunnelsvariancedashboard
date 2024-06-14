@@ -268,7 +268,7 @@ with st.container(border=True):
         with i2:
             #st.markdown('### FY 2025_26 Table')
             st.markdown('##### FY 25/26 Variance Comments')
-            st.markdown("**Overall FY 26/26 variance £27,834k:**")
+            st.markdown("**Overall FY 25/26 variance £27,834k:**")
             st.markdown('1. Stage 1 Scope (£5,886) - BMJV Phase 1 de-risking transfer of costs to FY24/25 and FY26/27')
             st.markdown('2. Stage 2 Unlet Works £5,160k - Early Works-Utilities & Programme de-risking £5,160k')
             st.markdown('3. Project Risk increased by £21,200k to account Scenario 1 Scope')
