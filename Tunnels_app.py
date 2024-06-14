@@ -36,7 +36,7 @@ formatted_df_in_month_value = f"£{df_in_month_value_result:,.0f}k"
 
 previous_in_mounth_value = 2265.34770
 df_in_month_delta = df_in_month_value_result - df_in_month_ABP_result
-formatted_df_in_month_delta = f"-£{-df_in_month_delta:,.0f}k"
+formatted_df_in_month_delta = f"£{df_in_month_delta:,.0f}k"
 
 
 df_YTD_Pillar = df_totals.at[84, 'YTD Actuals']
@@ -46,7 +46,7 @@ df_YTD_value_result = df_YTD_value/1000
 df_YTD_Pillar_result = df_YTD_Pillar/1000
 formatted_df_YTD_value = f"£{df_YTD_Pillar_result:,.0f}k"
 df_YTD_delta = df_YTD_value_result 
-formatted_df_YTD_delta = f"-£{-df_YTD_delta:,.0f}k"
+formatted_df_YTD_delta = f"£{df_YTD_delta:,.0f}k"
 
 
 df_24_25_value = df_totals.at[84, '2024/25']
@@ -76,7 +76,7 @@ st.set_page_config(page_title="T&A Variances Dashboard",
 
 st.title(':green-background[T&A Cost Forecast Variances Dashboard]')
 st.markdown('#### LTC Tunnels and Approaches variances against the ABP')
-st.markdown('''##### Month-end Reporting: :red[MAY24]''')
+st.markdown('''##### Month-end Reporting: :red[QBR June-24]''')
 
 # Sidebar filters
 # df_EAC= df_totals.groupby('Account').sum()
