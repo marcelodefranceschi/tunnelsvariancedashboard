@@ -29,7 +29,7 @@ df_YTD = pd.read_excel(file_address, engine="openpyxl", sheet_name="YTD")
 df_YTD_totals = pd.read_excel(file_address, engine="openpyxl", sheet_name="YTD_TOTALS")
 
 df_in_month_value = df_totals.at[89, 'Jun-24']
-df_in_month_ABP = df_ABP.at[89, 'Jun-24']
+df_in_month_ABP = df_ABP.at[84, 'Jun-24']
 df_in_month_value_result = df_in_month_value / 1000
 df_in_month_ABP_result = df_in_month_ABP / 1000
 formatted_df_in_month_value = f"£{df_in_month_value_result:,.0f}k"
@@ -40,7 +40,7 @@ formatted_df_in_month_delta = f"£{df_in_month_delta:,.0f}k"
 
 
 df_YTD_Pillar = df_totals.at[89, 'YTD Actuals']
-df_YTD_ABP = df_ABP.at[89, 'YTD Actuals']
+df_YTD_ABP = df_ABP.at[84, 'YTD Actuals']
 df_YTD_value = df_YTD_Pillar - df_YTD_ABP
 df_YTD_value_result = df_YTD_value/1000
 df_YTD_Pillar_result = df_YTD_Pillar/1000
