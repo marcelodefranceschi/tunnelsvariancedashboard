@@ -140,7 +140,7 @@ with st.container(border=True):
             st.markdown("1. OCS (£72k) - IVL PFA Removal to re-commence in July 2024.")
             st.markdown("2. Stage 1 Scope £427k - Forecast based on cost and In-month actualised to forecasted by DP supplier.")
             st.markdown("3. Inflation £95k - Inflation rate calculation adjusted from 8.09%  to 10.52% plus 2% a year and consequential changes from Stage 1 Scope.")
-            st.markdown("5. NR VAT £82k - Consequential changes from above items.")
+            st.markdown("4. NR VAT £82k - Consequential changes from above items.")
 
 
 # with st.container(border=True):
@@ -233,11 +233,11 @@ with st.container(border=True):
             st.dataframe(df_24_25, height=460)
         with g2:
             st.markdown('##### FY 24/25 Variance Comments')
-            st.markdown("**Overall FY 24/25 variance £2,361k:**")
+            st.markdown("**Overall FY 24/25 variance £3,243k:**")
             st.markdown('1. OCS £24k - Reprofile of Network Rail costs')
-            st.markdown('2. Stage 1 Scope £1,200k - BMJV Phase 1 de-risking transfer of costs from FY25/26')
-            st.markdown('3. Inflation £770k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year and consequential changes from Stage 1 Scope')
-            st.markdown('4. NR VAT £367k - Consequential changes from above items')
+            st.markdown('2. Stage 1 Scope £1,873k - £1,200k BMJV Phase 1 de-risking transfer of costs from FY25/26 and £673k from Trends of CHP and NP access bridge')
+            st.markdown('3. Inflation £842k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year and consequential changes from Stage 1 Scope')
+            st.markdown('4. NR VAT £504k - Consequential changes from above items')
 
 
 with st.container(border=True):
@@ -269,11 +269,10 @@ with st.container(border=True):
             #st.markdown('### FY 2025_26 Table')
             st.markdown('##### FY 25/26 Variance Comments')
             st.markdown("**Overall FY 25/26 variance £27,834k:**")
-            st.markdown('1. Stage 1 Scope (£5,886) - BMJV Phase 1 de-risking transfer of costs to FY24/25 and FY26/27')
-            st.markdown('2. Stage 2 Unlet Works £5,160k - Early Works-Utilities & Programme de-risking £5,160k')
-            st.markdown('3. Project Risk increased by £21,200k to account Scenario 1 Scope')
-            st.markdown('4. Inflation £3,036k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year')
-            st.markdown('5. NR VAT £4,326k - Consequential changes from above items')
+            st.markdown('1. Stage 1 Scope (£5,453) - (5,886k) BMJV Phase 1 de-risking transfer of costs to FY24/25 and FY26/27 and £433k from Trends of CHP and NP access bridge')
+            st.markdown('2. Stage 2 Unlet Works £25,926k - £5,160k Early Works-Utilities & Programme de-risking £5,160k and £20,766k from Trends')
+            st.markdown('3. Inflation £3,036k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year')
+            st.markdown('4. NR VAT £4,326k - Consequential changes from above items')
 
 
 #st.page_link("https://lowerthamescrossing.sharepoint.com/:x:/s/Prism/ERTBK6KjBdNIr4BN87Ny8AYBFWv9f64o9h2zRGjWBosGkg?e=y7vqFc", label="Tunnels Pillar Table", icon="🌎")
