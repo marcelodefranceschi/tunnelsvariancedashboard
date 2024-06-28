@@ -46,7 +46,7 @@ df_YTD_value_result = df_YTD_value/1000
 df_YTD_Pillar_result = df_YTD_Pillar/1000
 formatted_df_YTD_value = f"£{df_YTD_Pillar_result:,.0f}k"
 df_YTD_delta = df_YTD_value_result 
-formatted_df_YTD_delta = f"£{df_YTD_delta:,.0f}k"
+formatted_df_YTD_delta = f"-£{df_YTD_delta:,.0f}k"
 
 
 df_24_25_value = df_totals.at[89, '2024/25']
