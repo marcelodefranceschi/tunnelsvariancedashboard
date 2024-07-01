@@ -102,7 +102,7 @@ with st.container(border=True):
         #                 delta_color="off")
     with a3:
         tile = a3.container(height=120)
-        tile.metric(label="**FY 24/25**", value=formatted_df_24_25_value, delta_color="off", delta=formatted_df_24_25_delta)
+        tile.metric(label="**FY 24/25**", value=formatted_df_24_25_value, delta=formatted_df_24_25_delta)
     with a4:
         tile = a4.container(height=120)
         tile.metric(label="**FY 25/26**",
@@ -137,8 +137,8 @@ with st.container(border=True):
         with b2:
             st.markdown('##### In-month Variance Comments')
             st.markdown("**Overall In-month variance -£1,097k:**")
-            st.markdown("1. Stage 1 Scope -£837k - Forecast based on cost and In-month actualised to forecasted by DP supplier. Deferral of deliverables being 2 of them accounting for 87% of variance (Traffic Management Plan and QSRA & QCRA Report). Deferral of deliverables being 2 deliverables accounting for 87% of variance (Traffic Management Plan and QSRA & QCRA Report). Remaining variance relates to a new refined methodology for programme by Delivery Partner - backend loading of profile for OCI Deliverables.")
-            st.markdown("2. Inflation -£89k - Consequential changes from Stage 1 Scope.")
+            st.markdown("1. Phase 1 Scope -£837k - Two deliverables rescheduled in comparison to previous plan but still within the Scope requirements. Rescheduling is driven by CCIM deliverables being brought forward to de-risk the effect of any required iterations that could delay the acceptance.")
+            st.markdown("2. Inflation -£89k - Consequential changes from Phase 1 Scope.")
             st.markdown("3. NR VAT -£171k - Consequential changes from above items.")
 
 
@@ -200,8 +200,8 @@ with st.container(border=True):
         with e2:
             st.markdown('##### YTD Variance Comments')
             st.markdown("**Overall YTD variance -£1,097k:**")
-            st.markdown("1. Stage 1 Scope -£837k - Forecast based on cost and In-month actualised to forecasted by DP supplier. Deferral of deliverables being 2 of them accounting for 87% of variance (Traffic Management Plan and QSRA & QCRA Report). Deferral of deliverables being 2 deliverables accounting for 87% of variance (Traffic Management Plan and QSRA & QCRA Report). Remaining variance relates to a new refined methodology for programme by Delivery Partner - backend loading of profile for OCI Deliverables.")
-            st.markdown("2. Inflation -£89k - Consequential changes from Stage 1 Scope.")
+            st.markdown("1. Phase 1 Scope -£837k - Two deliverables rescheduled in comparison to previous plan but still within the Scope requirements. Rescheduling is driven by CCIM deliverables being brought forward to de-risk the effect of any required iterations that could delay the acceptance.")
+            st.markdown("2. Inflation -£89k - Consequential changes from Phase 1 Scope.")
             st.markdown("3. NR VAT -£171k - Consequential changes from above items.")
 
 
@@ -230,8 +230,8 @@ with st.container(border=True):
             st.dataframe(df_24_25, height=460)
         with g2:
             st.markdown('##### FY 24/25 Variance Comments')
-            st.markdown("**Overall FY 24/25 variance £0:**")
-            # st.markdown('1. OCS £24k - Reprofile of Network Rail costs')
+            st.markdown("**Overall FY 24/25 variance £145k:**")
+            st.markdown('1. Carbon £145k - Reprofile of Trend for zero emissions working group.')
             # st.markdown('2. Stage 1 Scope £1,873k - £1,200k BMJV Phase 1 de-risking transfer of costs from FY25/26 and £673k from Trends of CHP and NP access bridge')
             # st.markdown('3. Inflation £842k - Inflation rate calculation adjusted from 8.09% to 10.52% plus 2% a year and consequential changes from Stage 1 Scope')
             # st.markdown('4. NR VAT £504k - Consequential changes from above items')
