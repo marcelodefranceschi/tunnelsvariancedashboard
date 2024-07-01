@@ -35,18 +35,18 @@ df_in_month_QBR_result = df_in_month_QBR / 1000
 formatted_df_in_month_value = f"£{df_in_month_value_result:,.0f}k"
 
 previous_in_mounth_value = 2265.34770
-df_in_month_delta = df_in_month_value_result - df_in_month_QBR_result
-formatted_df_in_month_delta = f"£{df_in_month_delta:,.0f}k"
+df_in_month_delta = df_in_month_QBR_result - df_in_month_value_result
+formatted_df_in_month_delta = f"-£{df_in_month_delta:,.0f}k"
 
 
 df_YTD_Pillar = df_totals.at[89, 'YTD Actuals']
 df_YTD_QBR = df_QBR.at[89, 'YTD Actuals']
-df_YTD_value = df_YTD_Pillar - df_YTD_QBR
+df_YTD_value = df_YTD_QBR - df_YTD_Pillar
 df_YTD_value_result = df_YTD_value/1000
 df_YTD_Pillar_result = df_YTD_Pillar/1000
 formatted_df_YTD_value = f"£{df_YTD_Pillar_result:,.0f}k"
 df_YTD_delta = df_YTD_value_result 
-formatted_df_YTD_delta = f"£{df_YTD_delta:,.0f}k"
+formatted_df_YTD_delta = f"-£{df_YTD_delta:,.0f}k"
 
 
 df_24_25_value = df_totals.at[89, '2024/25']
@@ -92,22 +92,22 @@ with st.container(border=True):
     a1, a2, a3, a4 = st.columns(4)
     with a1:
         tile = a1.container(height=120)
-        tile.metric(label="**In-month**", value=formatted_df_in_month_value, delta=formatted_df_in_month_delta, delta_color="inverse", label_visibility="visible")
+        tile.metric(label="**In-month**", value=formatted_df_in_month_value, delta=formatted_df_in_month_delta, label_visibility="visible")
     with a2:
         tile = a2.container(height=120)
-        tile.metric(label="**Year To Date**", value=formatted_df_YTD_value, delta_color="inverse", delta=formatted_df_YTD_delta)
+        tile.metric(label="**Year To Date**", value=formatted_df_YTD_value, delta=formatted_df_YTD_delta)
         # tile.metric(label="EAC to QBR",
         #                 value=formatted_df_EAC_value,
         #                 delta="£0",
         #                 delta_color="off")
     with a3:
         tile = a3.container(height=120)
-        tile.metric(label="**FY 24/25**", value=formatted_df_24_25_value, delta=formatted_df_24_25_delta)
+        tile.metric(label="**FY 24/25**", value=formatted_df_24_25_value, delta_color="off", delta=formatted_df_24_25_delta)
     with a4:
         tile = a4.container(height=120)
         tile.metric(label="**FY 25/26**",
                         value=formatted_df_25_26_value,
-                        delta=formatted_df_25_26_delta)
+                        delta_color="off", delta=formatted_df_25_26_delta)
 
 
 
