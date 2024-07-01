@@ -137,9 +137,9 @@ with st.container(border=True):
         with b2:
             st.markdown('##### In-month Variance Comments')
             st.markdown("**Overall In-month variance -£1,097k:**")
-            st.markdown("1. Stage 1 Scope -£838k - Forecast based on cost and In-month actualised to forecasted by DP supplier. Deferral of deliverables being 2 deliverables accounting for 87% of variance (Traffic Management Plan and QSRA & QCRA report)")
-            st.markdown("2. Inflation £95k - Consequential changes from Stage 1 Scope.")
-            st.markdown("3. NR VAT £82k - Consequential changes from above items.")
+            st.markdown("1. Stage 1 Scope -£837k - Forecast based on cost and In-month actualised to forecasted by DP supplier. Deferral of deliverables being 2 deliverables accounting for 87% of variance (Traffic Management Plan and QSRA & QCRA report)")
+            st.markdown("2. Inflation -£89k - Consequential changes from Stage 1 Scope.")
+            st.markdown("3. NR VAT -£171k - Consequential changes from above items.")
 
 
 # with st.container(border=True):
@@ -200,9 +200,9 @@ with st.container(border=True):
         with e2:
             st.markdown('##### YTD Variance Comments')
             st.markdown("**Overall YTD variance -£1,097k:**")
-            st.markdown("1. Stage 1 Scope -£838k - Forecast based on cost and In-month actualised to forecasted by DP supplier. Deferral of deliverables being 2 deliverables accounting for 87% of variance (Traffic Management Plan and QSRA & QCRA report)")
-            st.markdown("2. Inflation £95k - Consequential changes from Stage 1 Scope.")
-            st.markdown("3. NR VAT £82k - Consequential changes from above items.")
+            st.markdown("1. Stage 1 Scope -£837k - Forecast based on cost and In-month actualised to forecasted by DP supplier. Deferral of deliverables being 2 deliverables accounting for 87% of variance (Traffic Management Plan and QSRA & QCRA report)")
+            st.markdown("2. Inflation -£89k - Consequential changes from Stage 1 Scope.")
+            st.markdown("3. NR VAT -£171k - Consequential changes from above items.")
 
 
 with st.container(border=True):
