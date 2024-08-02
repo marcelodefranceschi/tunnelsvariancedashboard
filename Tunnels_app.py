@@ -28,8 +28,8 @@ df_in_month_totals = pd.read_excel(file_address, engine="openpyxl", sheet_name="
 df_YTD = pd.read_excel(file_address, engine="openpyxl", sheet_name="YTD")
 df_YTD_totals = pd.read_excel(file_address, engine="openpyxl", sheet_name="YTD_TOTALS")
 
-df_in_month_value = df_totals.at[89, 'Jul-24']
-df_in_month_QBR = df_QBR.at[89, 'Jul-24']
+df_in_month_value = df_totals.at[88, 'Jul-24']
+df_in_month_QBR = df_QBR.at[88, 'Jul-24']
 df_in_month_value_result = df_in_month_value / 1000
 df_in_month_QBR_result = df_in_month_QBR / 1000
 formatted_df_in_month_value = f"£{df_in_month_value_result:,.0f}k"
@@ -39,8 +39,8 @@ df_in_month_delta = df_in_month_QBR_result - df_in_month_value_result
 formatted_df_in_month_delta = f"-£{df_in_month_delta:,.0f}k"
 
 
-df_YTD_Pillar = df_totals.at[89, 'YTD Actuals']
-df_YTD_QBR = df_QBR.at[89, 'YTD Actuals']
+df_YTD_Pillar = df_totals.at[88, 'YTD Actuals']
+df_YTD_QBR = df_QBR.at[88, 'YTD Actuals']
 df_YTD_value = df_YTD_QBR - df_YTD_Pillar
 df_YTD_value_result = df_YTD_value/1000
 df_YTD_Pillar_result = df_YTD_Pillar/1000
@@ -49,7 +49,7 @@ df_YTD_delta = df_YTD_value_result
 formatted_df_YTD_delta = f"-£{df_YTD_delta:,.0f}k"
 
 
-df_24_25_value = df_totals.at[89, '2024/25']
+df_24_25_value = df_totals.at[88, '2024/25']
 df_24_25_value_result = df_24_25_value/1000
 formatted_df_24_25_value = f"£{df_24_25_value_result:,.0f}k"
 
@@ -57,7 +57,7 @@ df_24_25_delta = df_24_25_totals.at[0, 'Variance']
 df_24_25_delta_result = df_24_25_delta/1000
 formatted_df_24_25_delta = f"£{df_24_25_delta_result:,.0f}k"
 
-df_25_26_value = df_totals.at[89, '2025/26']
+df_25_26_value = df_totals.at[88, '2025/26']
 df_25_26_value_result = df_25_26_value/1000
 formatted_df_25_26_value = f"£{df_25_26_value_result:,.0f}k"
 
@@ -65,7 +65,7 @@ df_25_26_delta = df_25_26_totals.at[0, 'Variance']
 df_25_26_delta_result = df_25_26_delta/1000
 formatted_df_25_26_delta = f"£{df_25_26_delta_result:,.0f}k"
 
-df_EAC_value = df_totals.at[89, 'EAC (Current)']
+df_EAC_value = df_totals.at[88, 'EAC (Current)']
 df_EAC_value_result = df_EAC_value / 1000
 formatted_df_EAC_value = f"£{df_EAC_value_result:,.0f}k"
 
@@ -138,7 +138,7 @@ with st.container(border=True):
             st.markdown('##### In-month Variance Comments')
             st.markdown("**Overall In-month variance -£1,097k:**")
             st.markdown("1. Phase 1 Scope -£837k - Two deliverables rescheduled in comparison to previous plan but still within the Scope requirements. Rescheduling is driven by CCIM deliverables being brought forward to de-risk the effect of any required iterations that could delay the acceptance.")
-            st.markdown("2. Inflation -£89k - Consequential changes from Phase 1 Scope.")
+            st.markdown("2. Inflation -£88k - Consequential changes from Phase 1 Scope.")
             st.markdown("3. NR VAT -£171k - Consequential changes from above items.")
 
 
@@ -201,7 +201,7 @@ with st.container(border=True):
             st.markdown('##### YTD Variance Comments')
             st.markdown("**Overall YTD variance -£1,097k:**")
             st.markdown("1. Phase 1 Scope -£837k - Two deliverables rescheduled in comparison to previous plan but still within the Scope requirements. Rescheduling is driven by CCIM deliverables being brought forward to de-risk the effect of any required iterations that could delay the acceptance.")
-            st.markdown("2. Inflation -£89k - Consequential changes from Phase 1 Scope.")
+            st.markdown("2. Inflation -£88k - Consequential changes from Phase 1 Scope.")
             st.markdown("3. NR VAT -£171k - Consequential changes from above items.")
 
 
@@ -385,8 +385,8 @@ df_in_month_totals = pd.read_excel(file_address, engine="openpyxl", sheet_name="
 df_YTD = pd.read_excel(file_address, engine="openpyxl", sheet_name="YTD")
 df_YTD_totals = pd.read_excel(file_address, engine="openpyxl", sheet_name="YTD_TOTALS")
 
-df_in_month_value = df_totals.at[89, 'Jul-24']
-df_in_month_ABP = df_ABP.at[89, 'Jul-24']
+df_in_month_value = df_totals.at[88, 'Jul-24']
+df_in_month_ABP = df_ABP.at[88, 'Jul-24']
 df_in_month_value_result = df_in_month_value / 1000
 df_in_month_ABP_result = df_in_month_ABP / 1000
 formatted_df_in_month_value = f"£{df_in_month_value_result:,.0f}k"
@@ -396,8 +396,8 @@ df_in_month_delta = df_in_month_ABP_result - df_in_month_value_result
 formatted_df_in_month_delta = f"-£{df_in_month_delta:,.0f}k"
 
 
-df_YTD_Pillar = df_totals.at[89, 'YTD Actuals']
-df_YTD_ABP = df_ABP.at[89, 'YTD Actuals']
+df_YTD_Pillar = df_totals.at[88, 'YTD Actuals']
+df_YTD_ABP = df_ABP.at[88, 'YTD Actuals']
 df_YTD_value = df_YTD_ABP - df_YTD_Pillar
 df_YTD_value_result = df_YTD_value/1000
 df_YTD_Pillar_result = df_YTD_Pillar/1000
@@ -406,7 +406,7 @@ df_YTD_delta = df_YTD_value_result
 formatted_df_YTD_delta = f"-£{df_YTD_delta:,.0f}k"
 
 
-df_24_25_value = df_totals.at[89, '2024/25']
+df_24_25_value = df_totals.at[88, '2024/25']
 df_24_25_value_result = df_24_25_value/1000
 formatted_df_24_25_value = f"£{df_24_25_value_result:,.0f}k"
 
@@ -414,7 +414,7 @@ df_24_25_delta = df_24_25_totals.at[0, 'Variance']
 df_24_25_delta_result = df_24_25_delta/1000
 formatted_df_24_25_delta = f"£{df_24_25_delta_result:,.0f}k"
 
-df_25_26_value = df_totals.at[89, '2025/26']
+df_25_26_value = df_totals.at[88, '2025/26']
 df_25_26_value_result = df_25_26_value/1000
 formatted_df_25_26_value = f"£{df_25_26_value_result:,.0f}k"
 
@@ -422,7 +422,7 @@ df_25_26_delta = df_25_26_totals.at[0, 'Variance']
 df_25_26_delta_result = df_25_26_delta/1000
 formatted_df_25_26_delta = f"£{df_25_26_delta_result:,.0f}k"
 
-df_EAC_value = df_totals.at[89, 'EAC (Current)']
+df_EAC_value = df_totals.at[88, 'EAC (Current)']
 df_EAC_value_result = df_EAC_value / 1000
 formatted_df_EAC_value = f"£{df_EAC_value_result:,.0f}k"
 
@@ -495,7 +495,7 @@ with st.container(border=True):
             st.markdown('##### In-month Variance Comments')
             st.markdown("**Overall In-month variance -£1,097k:**")
             st.markdown("1. Phase 1 Scope -£837k - Two deliverables rescheduled in comparison to previous plan but still within the Scope requirements. Rescheduling is driven by CCIM deliverables being brought forward to de-risk the effect of any required iterations that could delay the acceptance.")
-            st.markdown("2. Inflation -£89k - Consequential changes from Phase 1 Scope.")
+            st.markdown("2. Inflation -£88k - Consequential changes from Phase 1 Scope.")
             st.markdown("3. NR VAT -£171k - Consequential changes from above items.")
 
 
@@ -558,7 +558,7 @@ with st.container(border=True):
             st.markdown('##### YTD Variance Comments')
             st.markdown("**Overall YTD variance -£1,097k:**")
             st.markdown("1. Phase 1 Scope -£837k - Two deliverables rescheduled in comparison to previous plan but still within the Scope requirements. Rescheduling is driven by CCIM deliverables being brought forward to de-risk the effect of any required iterations that could delay the acceptance.")
-            st.markdown("2. Inflation -£89k - Consequential changes from Phase 1 Scope.")
+            st.markdown("2. Inflation -£88k - Consequential changes from Phase 1 Scope.")
             st.markdown("3. NR VAT -£171k - Consequential changes from above items.")
 
 
