@@ -10,13 +10,13 @@ import subprocess
 file_address = "Tunnels_PBS_QBR.xlsx"
 
 wb = load_workbook(file_address, data_only=True)
-ws = wb["Pillar C Tunnels"]
+ws = wb["Tunnels JUL24"]
 
 
 # Read Excel data into a DataFrame
 df_totals = pd.read_excel(file_address,
                           engine="openpyxl",
-                          sheet_name="Pillar C Tunnels")
+                          sheet_name="Tunnels JUL24")
 df_QBR = pd.read_excel(file_address, engine="openpyxl", sheet_name="QBR")
 
 df_24_25 = pd.read_excel(file_address, engine="openpyxl", sheet_name="2024_25")
@@ -367,13 +367,13 @@ if st.button("Run python script"):
 file_address = "Tunnels_PBS_ABP.xlsx"
 
 wb = load_workbook(file_address, data_only=True)
-ws = wb["Pillar C Tunnels"]
+ws = wb["Tunnels JUL24"]
 
 
 # Read Excel data into a DataFrame
 df_totals = pd.read_excel(file_address,
                           engine="openpyxl",
-                          sheet_name="Pillar C Tunnels")
+                          sheet_name="Tunnels JUL24")
 df_ABP = pd.read_excel(file_address, engine="openpyxl", sheet_name="ABP")
 
 df_24_25 = pd.read_excel(file_address, engine="openpyxl", sheet_name="2024_25")
